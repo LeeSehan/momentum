@@ -1,0 +1,20 @@
+body {
+  background-color: #dfe6e9;
+}
+
+h1 {
+  color: #2d3436;
+}
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.form,
+.greetings {
+  display: none; /*공간이 사라지고 텍스트만 표시*/
+}
+
+.showing {
+  display: block;
+}
