@@ -5,6 +5,10 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
+function askForName(){
+    form.classList.add(SHOWING_CN);
+}
+
 function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greetings.classList.add(SHOWING_CN);
@@ -14,7 +18,7 @@ function paintGreeting(text){
 function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
     if(currentUser === null){
-
+        askForName();
     } else{
         paintGreeting(currentUser);
     }
