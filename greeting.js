@@ -5,8 +5,13 @@ const form = document.querySelector(".js-form"),
 const USER_LS = "currentUser",
     SHOWING_CN = "showing";
 
+function handleSubmit(event){
+
+}
+
 function askForName(){
     form.classList.add(SHOWING_CN);
+    form.addEventListener("submit", handleSubmit);
 }
 
 function paintGreeting(text){
